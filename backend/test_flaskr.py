@@ -21,7 +21,7 @@ class TriviaTestCase(unittest.TestCase):
         self.client = self.app.test_client
         self.DB_HOST = os.getenv('DB_HOST', '127.0.0.1:5432')
         self.DB_USER = os.getenv('DB_USER', 'admin')
-        self.DB_PASSWORD = os.getenv('DB_PASSWORD', 'Opadah12')
+        self.DB_PASSWORD = os.getenv('DB_PASSWORD', 'password')
         self.DB_NAME = os.getenv('DB_NAME', 'trivia_test')
         self.DB_PATH = 'postgresql+psycopg2://{}:{}@{}/{}'.format(
             self.DB_USER, self.DB_PASSWORD, self.DB_HOST, self.DB_NAME)
